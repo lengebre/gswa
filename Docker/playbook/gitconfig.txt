@@ -1,0 +1,3 @@
+[user]
+    name = "Ron Swanson"
+    email = "ron@local.host"

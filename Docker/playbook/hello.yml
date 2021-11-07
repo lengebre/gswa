@@ -1,0 +1,10 @@
+#!/usr/bin/env ansible-playbook
+---
+- name: Local host Command
+  hosts: localhost
+  tasks:
+  - name: "Echo the Hello Ansible Command"
+    command: echo "Hi! I'm running from ansible"
+    changed_when: false
+
+...

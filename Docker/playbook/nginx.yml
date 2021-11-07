@@ -1,0 +1,16 @@
+#!/usr/bin/env ansible-playbook
+---
+- hosts: localhost
+  strategy: debug
+  remote_user: ubuntu
+  become: true
+  connection: local
+
+  tasks:
+    - name: install nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: true
+        cache_valid_time: 3600
+...
